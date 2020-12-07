@@ -1,0 +1,59 @@
+
+    section article form{
+        border: 1px black dashed;    
+    }
+
+
+    form p {
+        text-align: center;
+    }
+
+    
+
+    /*Zoom icone réseau social*/
+    .zoom {
+        text-align: center;
+    }
+    .zoom img {
+    
+        height:70px;
+        margin-left: 100px;
+    }
+    .zoom img:hover {
+        height:90px;
+    }
+    
+    section{
+        display: flex; 
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 20px;
+        margin: 20px auto;
+        box-shadow: 0px 0px 10px #bbb;
+        background-color: #fff;
+    }
+    
+
+    @media only screen and (max-width: 1188px){
+    .zoom img {
+        margin-left: 1%;
+    }
+        }
+
+    @media screen and (max-width: 560px){
+        
+        .zoom {
+            text-align: center;       
+            font-size: medium;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;  
+        }
+        .zoom img {    
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+ 

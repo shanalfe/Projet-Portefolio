@@ -1,0 +1,129 @@
+section{  
+   
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 25px auto;
+    box-shadow: 0px 0px 10px #bbb;
+    background-color: #fff;
+}
+
+section h2 {  
+    text-align: center;
+    margin-bottom: 5px;    
+}
+
+
+section iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width : 710px;
+    height : 400px;
+   
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ 
+    
+}
+
+
+
+/*site java*/
+
+
+.carousel ul {
+    margin: 0 0 1.5rem;
+    padding: 0;
+}
+
+.carousel li {
+    display: inline-block;
+}
+
+.card h2 {
+    text-align: center;
+}
+.card {
+    border: 1px solid #bac6d3;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    /*couleur texte et fond*/
+    background-color: black;
+    color: white;
+    height: 620px; /*taille case noire*/
+}
+
+.card img {
+    width: 400px;
+}
+
+.double_img_card img {
+    width: 320px;
+}
+
+.carousel-items {
+    display: -webkit-box;
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+    -webkit-box-flex: 1;
+    flex: 1 0 100px; /*taille glob*/
+    margin-left: 1rem;
+    scroll-snap-align: start;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+
+
+
+
+
+@media screen and (max-width: 646px){
+    .card img {
+        width: 300px;
+    }
+    
+    .double_img_card img {
+        width: 220px;
+    }
+
+    .card {
+       height: 490px; /*taille case noire*/
+    }
+
+}
+
+/*autre*/
+
+
+
+@media screen and (max-width: 800px) {
+  
+section iframe {
+    width: 300px;
+    height: 150px;
+}
+}
+
+
+@media screen and (max-width: 991px) {
+.quizZone {
+    display: none;
+}
+
+
+}
+
+

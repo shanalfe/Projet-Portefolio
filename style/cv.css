@@ -1,0 +1,377 @@
+article, aside{
+    text-align: justify;
+}
+
+#title {
+    background-color: grey;
+    width: 100;
+}
+
+
+/*Centrer mon image*/
+#imgcenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+ 
+}
+
+#pointcenter {
+    text-align:  center;
+}
+
+
+/* Style barre de compétence*/
+
+.comp{
+    display:flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+}
+.comp p{
+    flex: 0 0 40%;
+}
+.conteneur-barre{
+    flex: 0 0 50%;
+    border-radius: 5px;
+    background-color: grey;
+    border-bottom: 1px ridge grey;
+}
+.barre{
+    display: block;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.c70{
+    width: 70%;
+    background-color: rgb(117, 235, 11);
+    border-radius: 5px;
+}
+
+.c75{
+    width: 75%;
+    background-color: rgb(135, 235, 21);
+}
+.c80{
+    width: 80%;
+    background-color: rgb(21, 235, 39);
+}
+
+.c85{
+    width: 85%;
+    background-color: rgb(14, 167, 39);
+}
+.c88{
+    width: 88%;
+    background-color: rgb(14, 167, 47);
+}
+
+.c95{
+    width: 95%;
+    background-color: rgb(11, 99, 26);
+}
+
+.comp2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.conteneur-barre2{
+    flex: 0 0 100%;
+    height: 0.5em;
+    margin-bottom: 0.25em;
+    border-radius: 5px;
+    background-color: grey;
+}
+
+
+/*Formaation*/
+/*SECTION EXP ET FORMATION*/
+.exp{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.exp_ecrit{
+  
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.exp-info{
+    display: flex;
+    flex-flow: column wrap;
+}
+.exp-logo{
+    flex: 0 0 25%;
+    max-width: 100px;
+}
+.exp-info{
+    flex: 0 0 70%;
+    margin-left: auto;
+}
+.exp img{
+    width: 180%;
+}
+.exp h3{
+    font-size:  1.2em;
+}
+.exp h4{
+    font-size:  1em;
+    font-weight: normal;
+}
+.exp img:hover {
+    width: 200%;
+}
+
+
+
+/*SECTION INTERETS*/
+.interet{    
+    display : inline-block;
+    text-align: center;
+    margin-left: 200px;
+    font-size: medium;
+
+   }
+.interet img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #555;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+  
+}
+
+.interet img:hover{
+    width:  90px;
+    height: 90px;
+}
+
+
+section > div{
+    width: 90%;
+}
+
+section{
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #bbb;
+    background-color: #fff;
+}
+
+.titre_comp {
+    text-align: center;
+}
+
+
+/*centre interet pop*/
+
+#overlay3{
+    display: none;
+    position: fixed;
+    top:0; right:0; bottom:0; left:0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+#overlay3:target{
+    display: block;
+}
+
+#overlay4{
+    display: none;
+    position: fixed;
+    top:0; right:0; bottom:0; left:0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+#overlay4:target{
+    display: block;
+}
+
+#overlay5{
+    display: none;
+    position: fixed;
+    top:0; right:0; bottom:0; left:0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+#overlay5:target{
+    display: block;
+}
+
+
+.popup_block{
+    background: #fff;
+    padding: 25px;
+    border: 20px solid #ddd;
+    position: relative;
+    margin: 5% auto; /*position pop up*/
+    /*taille pop*/
+    width: 50%; 
+    box-shadow: 0px 0px 20px #000;
+    border-radius: 10px;
+}
+img.btn_close {
+    float: right;
+    margin: -53px -50px 0 0;
+    width: 20px;
+}
+
+/*bouton*/
+.wrapper{
+  text-align: center;
+  }
+  
+.wrapper  a{
+    display: inline-block;
+    padding: 12px 18px;
+    text-decoration: none;
+    position: relative;
+    border: 2px solid #333;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #333;
+    overflow: hidden;
+  }
+  
+.wrapper a span{
+    position: relative;
+    z-index: 2;
+  }
+  
+ .wrapper a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: orange;
+    transition: all .35s;
+  }
+  
+ .wrapper a:hover{
+    color: #fff;
+  }
+  
+ .wrapper a:hover:after{
+    width: 100%;
+  }
+
+.down {
+    margin-bottom: 40px;
+}
+
+
+@media screen and (max-width : 620px){
+    
+    .popup_block{       
+        /*taille pop*/
+        width: 95%; 
+        box-shadow: 0px 0px 20px #000;     
+        padding: 10px;
+        border: 10px solid #ddd;
+        margin: 20% auto;
+
+    }
+   
+    img.btn_close {
+        float: right;
+        margin: -28px -30px 0 0;
+        width: 30px;
+    }
+
+}
+
+@media screen and (max-width : 375px){
+    .popup_block h2 {
+        font-size: 20px;
+    }  
+
+}   
+
+
+@media screen and (max-width: 740px){
+   
+    .exp img{
+        width: 90%;
+    }
+
+    .exp-info h3 {
+        font-size: 15px;
+    }
+    .exp-info h4{
+        font-size: 13px;
+    }
+    .exp-info h5 {
+        font-size: 11px;
+    }
+
+    img {
+        width: 15%;
+    }
+}
+
+
+@media screen and (max-width: 1181px ){
+    
+    .interet{    
+     
+        text-align: center;       
+        font-size: medium;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;     
+       }
+
+    .interet img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px #555;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+                
+    }
+
+}
+
+@media screen and (max-width: 412px ){
+    
+    .interet {         
+        text-align: center;       
+        font-size: medium;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;     
+    }
+
+    .interet img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;        
+        box-shadow: 0px 0px 15px #555;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;   
+                
+    }
+
+}
+

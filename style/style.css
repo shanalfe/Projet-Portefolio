@@ -1,0 +1,292 @@
+
+/* Eléments principaux de la page */
+
+body{
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+    background-color: white;
+    position: relative;
+}
+
+body p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width: 646px){
+    body h1{
+        font-size: 18px;
+    }
+
+    section h2 {
+        font-size: 18px;
+    }
+
+    section p {
+        font-size: 14px;
+    }
+    p {
+        font-size: 13px;
+    }
+}
+
+
+/* HEADER  */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;    
+}
+
+#titre_principal{
+    display: flex;
+    flex-direction: column;
+}
+
+header h2{
+    margin-top: 3%;
+    margin-left: 20%;
+    font-weight: normal;
+    letter-spacing: 0.2em; /*espacement des lettres*/
+}
+
+
+/*MENU NAVIGATION*/
+
+*{
+    margin-bottom: 10px;
+}
+
+nav{
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+.conteneur-nav{
+    position: absolute;
+    width: 100%;
+}
+nav input[type=checkbox]{
+    display: none;
+}
+nav label{
+    display: inline-block;
+    width: 80%;
+   margin-right: 0px;
+    text-align: center;
+}
+
+nav ul{
+    display: none;
+    list-style-type: none;
+}
+nav input[type=checkbox]:checked + ul{
+    display: flex;
+    flex-flow : column wrap;
+}
+nav ul li{
+    flex: 1 1 auto;
+    text-align: center;
+}
+nav > div > ul > li > a{
+    color: white;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px;
+    font-size: 20px;
+}
+
+
+/*menu téléphone*/
+@media screen and (min-width: 980px){
+    .conteneur-nav{
+        position: static;
+    }
+    nav label, nav input{
+        display: none;
+  
+    }
+    nav input[type=checkbox]:checked + ul, nav ul{
+        display: flex;
+        flex-flow: row wrap;       
+    }
+    nav ul li{
+        position: relative;
+        z-index: 1;
+       
+    }
+    
+
+    nav a{
+        border-bottom: 1px solid transparent;
+        
+    }
+    nav a:hover{
+       color: orange;
+        border-bottom: 1px solid gold;
+        font-weight: bold;        
+    }       
+
+}
+
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    padding: 15px;
+    background-color: rgba(19, 18, 18, 0.87);
+    width: 100%;
+    color: white;
+    margin-top: 5%;   
+    height: auto;
+    margin-bottom: 0px;
+    
+}
+
+footer p, footer ul{
+    font-size: 1em;
+}
+.logo {
+    margin-right: 50%;
+}
+
+footer h1{
+    font-size: 1.1em;
+}
+
+.info_footer{
+    grid-column: 1 / 3;
+    margin-left: 5%;
+}
+
+.menu_footer{
+    grid-column: 2 / 3;
+    margin-left: 10%;     
+}
+.contact_footer{
+    grid-column: 3 / 3;
+    margin-left: 20%;
+}
+
+.contact_footer img {
+    width: 40px;
+    
+}
+
+.info_footer img {
+    width: 200px;
+}
+
+/*Couleur lien*/
+footer a:link {
+    color: white;
+
+}
+footer a:visited{
+    color: white;
+}
+
+
+
+
+/*footer téléphone*/
+@media screen and (max-width: 646px){
+
+    footer p {
+        font-size: x-small;
+    }
+
+    footer h4 {
+        font-size: 12px;
+    }
+
+    .contact_footer img {
+        width: 20px;
+        
+    }
+
+    .info_footer img {
+        width: 90px;
+    }
+    
+
+    .info_footer{
+        grid-column: 1 / 3;
+        margin-left: 0px;
+    }
+
+    .menu_footer{
+        grid-column: 2 / 3;
+        margin-left: 3%;  
+    }
+    .contact_footer{
+        grid-column: 3 / 3;
+        margin-left: 5%;
+  
+   }
+    
+}
+
+
+/*DIVERS*/
+
+/*les espaces*/
+
+.espace_petit{
+    margin-top: 5%;
+}
+
+.espace_grand{
+    margin-top: 15%;
+}
+
+.espace_mini{
+    margin-top: 2%;
+}
+
+.espace_moyen {
+    margin-top: 8%;
+}
+
+/*centrer une image*/
+
+.center_image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+/*enlever souligne lien*/
+
+a:link{
+    text-decoration:none;
+}
+
+h1{  
+    text-align: center;
+    font-weight: bold;
+    background-color: #CCC;
+    padding: 2%;
+    opacity: 75%;
+}
+
+
+/*syle de la barre*/
+
+::-webkit-scrollbar {
+    height: 6px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:orange; /*barre*/
+    border-radius: 3px;
+}
