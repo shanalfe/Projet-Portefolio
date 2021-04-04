@@ -1,4 +1,3 @@
-
 /* Eléments principaux de la page */
 
 body{
@@ -6,38 +5,34 @@ body{
     color: #181818;
     background-color: white;
     position: relative;
+    text-align: justify;
+    margin: auto
+
+
 }
+
 
 body p {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: auto;
+    font-size: 18px;
 }
 
-
-@media screen and (max-width: 646px){
-    body h1{
-        font-size: 18px;
-    }
-
-    section h2 {
-        font-size: 18px;
-    }
-
-    section p {
-        font-size: 14px;
-    }
-    p {
-        font-size: 13px;
-    }
+h1{
+    text-align: center;
+    font-weight: bold;
+    background-color: #CCC;
+    padding: 2%;
+    opacity: 75%;
 }
-
 
 /* HEADER  */
 
 header{
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;    
+    align-items: flex-end;
 }
 
 #titre_principal{
@@ -53,11 +48,7 @@ header h2{
 }
 
 
-/*MENU NAVIGATION*/
 
-*{
-    margin-bottom: 10px;
-}
 
 nav{
     width: 60%;
@@ -65,6 +56,8 @@ nav{
     background-color: white;
     position: sticky;
     top: 0px;
+ 
+   
 }
 .conteneur-nav{
     position: absolute;
@@ -79,7 +72,6 @@ nav label{
    margin-right: 0px;
     text-align: center;
 }
-
 nav ul{
     display: none;
     list-style-type: none;
@@ -104,55 +96,24 @@ nav a{
 }
 
 
-/*menu téléphone*/
-@media screen and (min-width: 980px){
-    .conteneur-nav{
-        position: static;
-    }
-    nav label, nav input{
-        display: none;
-  
-    }
-    nav input[type=checkbox]:checked + ul, nav ul{
-        display: flex;
-        flex-flow: row wrap;       
-    }
-    nav ul li{
-        position: relative;
-        z-index: 1;
-       
-    }
-    
-
-    nav a{
-        border-bottom: 1px solid transparent;
-        
-    }
-    nav a:hover{
-       color: orange;
-        border-bottom: 1px solid gold;
-        font-weight: bold;        
-    }       
-
-}
-
-
 /* FOOTER */
 
 footer{
     display: flex;
     padding: 15px;
     background-color: rgba(19, 18, 18, 0.87);
-    width: 100%;
+    width: auto;
     color: white;
-    margin-top: 5%;   
+    margin-top: 5%;
     height: auto;
     margin-bottom: 0px;
-    
 }
 
 footer p, footer ul{
-    font-size: 1em;
+    font-size: 1.3em;
+}
+footer h4 {
+    font-size: 20px;
 }
 .logo {
     margin-right: 50%;
@@ -169,7 +130,7 @@ footer h1{
 
 .menu_footer{
     grid-column: 2 / 3;
-    margin-left: 10%;     
+    margin-left: 15%;
 }
 .contact_footer{
     grid-column: 3 / 3;
@@ -178,27 +139,96 @@ footer h1{
 
 .contact_footer img {
     width: 40px;
-    
 }
 
 .info_footer img {
     width: 200px;
 }
 
+.logo_upec {
+  width : 200px;
+}
+
+.golo img {
+  width: 60px;
+}
+
+/*LIEN*/
 /*Couleur lien*/
 footer a:link {
     color: white;
-
 }
 footer a:visited{
     color: white;
 }
+/*enlever souligne lien*/
+a:link{
+    text-decoration:none;
+}
+
+h2 a:link {
+    color: black;
+}
+h2 a:visited{
+    color: black;
+} 
+
+/*DIVERS*/
+
+/*les espaces*/
+.espace_petit{
+    margin-top: 5%;
+}
+.espace_grand{
+    margin-top: 15%;
+}
+.espace_mini{
+    margin-top: 2%;
+}
+.espace_moyen {
+    margin-top: 8%;
+}
 
 
+/*centrer une image*/
+.center_image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
-/*footer téléphone*/
+/*syle de la barre*/
+::-webkit-scrollbar {
+    height: 6px;
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+    background-color:orange; /*barre*/
+    border-radius: 3px;
+}
+
+/*MEDIA QUERIES*/
+
+
 @media screen and (max-width: 646px){
+    body h1{
+        font-size: 18px;
+    }
+    body p {
+      font-size: 14px;
+    }
+
+    section h2 {
+        font-size: 18px;
+    }
+
+    section p {
+        font-size: 14px;
+    }
+    p {
+        font-size: 13px;
+    }
 
     footer p {
         font-size: x-small;
@@ -210,83 +240,77 @@ footer a:visited{
 
     .contact_footer img {
         width: 20px;
-        
     }
 
     .info_footer img {
         width: 90px;
     }
-    
-
     .info_footer{
         grid-column: 1 / 3;
         margin-left: 0px;
     }
-
     .menu_footer{
         grid-column: 2 / 3;
-        margin-left: 3%;  
+        margin-left: 3%;
     }
     .contact_footer{
         grid-column: 3 / 3;
         margin-left: 5%;
-  
    }
-    
+   .logo_upec {
+     width : 100px;
+   }
+   .golo img {
+     width: 30px;
+   }
+
+
 }
 
 
-/*DIVERS*/
+@media screen and (max-height :819px ){
+    .espace_petit{
+        margin-top: 2%;
+    }
 
-/*les espaces*/
+    .espace_grand{
+        margin-top: 10%;
+    }
 
-.espace_petit{
-    margin-top: 5%;
-}
+    .espace_mini{
+        margin-top: 1%
+    }
 
-.espace_grand{
-    margin-top: 15%;
-}
-
-.espace_mini{
-    margin-top: 2%;
-}
-
-.espace_moyen {
-    margin-top: 8%;
-}
-
-/*centrer une image*/
-
-.center_image{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;    
-}
-
-/*enlever souligne lien*/
-
-a:link{
-    text-decoration:none;
-}
-
-h1{  
-    text-align: center;
-    font-weight: bold;
-    background-color: #CCC;
-    padding: 2%;
-    opacity: 75%;
+    .espace_moyen {
+        margin-top: 5%;
+    }
 }
 
 
-/*syle de la barre*/
+@media screen and (min-width: 980px){
+    .conteneur-nav{
+        position: static;
+    }
+    nav label, nav input{
+        display: none;
 
-::-webkit-scrollbar {
-    height: 6px;
-    background-color: #F5F5F5;
-}
+    }
+    nav input[type=checkbox]:checked + ul, nav ul{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    nav ul li{
+        position: relative;
+        z-index: 1;
+    }
 
-::-webkit-scrollbar-thumb {
-    background-color:orange; /*barre*/
-    border-radius: 3px;
+    nav a{
+        border-bottom: 1px solid transparent;
+    }
+    nav a:hover{
+       color: orange;
+        border-bottom: 1px solid gold;
+        font-weight: bold;
+    }
+
 }

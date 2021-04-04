@@ -7,13 +7,22 @@ article, aside{
     width: 100;
 }
 
+section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 85%;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #bbb;
+    background-color: #fff;
+}
 
 /*Centrer mon image*/
 #imgcenter {
     display: block;
     margin-left: auto;
-    margin-right: auto 
- 
+    margin-right: auto
 }
 
 #pointcenter {
@@ -22,7 +31,6 @@ article, aside{
 
 
 /* Style barre de compétence*/
-
 .comp{
     display:flex;
     flex-flow: row wrap;
@@ -43,13 +51,11 @@ article, aside{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-
 .c70{
     width: 70%;
     background-color: rgb(117, 235, 11);
     border-radius: 5px;
 }
-
 .c75{
     width: 75%;
     background-color: rgb(135, 235, 21);
@@ -58,7 +64,6 @@ article, aside{
     width: 80%;
     background-color: rgb(21, 235, 39);
 }
-
 .c85{
     width: 85%;
     background-color: rgb(14, 167, 39);
@@ -67,12 +72,10 @@ article, aside{
     width: 88%;
     background-color: rgb(14, 167, 47);
 }
-
 .c95{
     width: 95%;
     background-color: rgb(11, 99, 26);
 }
-
 .comp2{
     display: flex;
     flex-flow: row wrap;
@@ -87,38 +90,56 @@ article, aside{
 }
 
 
-/*Formaation*/
+
 /*SECTION EXP ET FORMATION*/
 .exp{
     display: flex;
     flex-flow: row wrap;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 1px solid orange;
     padding-bottom: 10px;
     margin-bottom: 10px;
 }
-
 .exp_ecrit{
-  
-    border-bottom: 1px solid #bbb;
+    border-bottom: 1px solid orange;
     padding-bottom: 5px;
     margin-bottom: 5px;
 }
-
 .exp-info{
     display: flex;
     flex-flow: column wrap;
 }
+/*logo*/
 .exp-logo{
     flex: 0 0 25%;
     max-width: 100px;
-}
-.exp-info{
-    flex: 0 0 70%;
-    margin-left: auto;
+    margin-top: 20px;
 }
 .exp img{
     width: 180%;
 }
+.exp img:hover {
+    width: 200%;
+    display: block;
+}
+
+.exp-logo_saintjo{
+    flex: 0 0 25%;
+    max-width: 100px;
+    margin-top: 20px;
+}
+.exp-logo_saintjo img{
+    width: 140%;
+}
+.exp-logo_saintjo img:hover {
+    width: 150%;
+    display: block;
+}
+
+.exp-info{
+    flex: 0 0 70%;
+    margin-left: auto;
+}
+
 .exp h3{
     font-size:  1.2em;
 }
@@ -126,17 +147,13 @@ article, aside{
     font-size:  1em;
     font-weight: normal;
 }
-.exp img:hover {
-    width: 200%;
-}
-
 
 
 /*SECTION INTERETS*/
-.interet{    
-    display : inline-block;
-    text-align: center;
-    margin-left: 200px;
+
+.interet{
+  text-align: center;
+    margin-left: 1%;
     font-size: medium;
 
    }
@@ -146,9 +163,8 @@ article, aside{
     border-radius: 50%;
     box-shadow: 0px 0px 15px #555;
     display: block;
-    margin-left: auto;
-    margin-right: auto; 
-  
+    margin-left: 0%;
+
 }
 
 .interet img:hover{
@@ -161,16 +177,6 @@ section > div{
     width: 90%;
 }
 
-section{
-    display: flex; 
-    flex-flow: row wrap;
-    justify-content: center;
-    width: 100%;
-    padding-bottom: 20px;
-    margin: 20px auto;
-    box-shadow: 0px 0px 10px #bbb;
-    background-color: #fff;
-}
 
 .titre_comp {
     text-align: center;
@@ -178,7 +184,6 @@ section{
 
 
 /*centre interet pop*/
-
 #overlay3{
     display: none;
     position: fixed;
@@ -189,7 +194,6 @@ section{
 #overlay3:target{
     display: block;
 }
-
 #overlay4{
     display: none;
     position: fixed;
@@ -200,7 +204,6 @@ section{
 #overlay4:target{
     display: block;
 }
-
 #overlay5{
     display: none;
     position: fixed;
@@ -211,8 +214,6 @@ section{
 #overlay5:target{
     display: block;
 }
-
-
 .popup_block{
     background: #fff;
     padding: 25px;
@@ -220,7 +221,7 @@ section{
     position: relative;
     margin: 5% auto; /*position pop up*/
     /*taille pop*/
-    width: 50%; 
+    width: 50%;
     box-shadow: 0px 0px 20px #000;
     border-radius: 10px;
 }
@@ -234,7 +235,7 @@ img.btn_close {
 .wrapper{
   text-align: center;
   }
-  
+
 .wrapper  a{
     display: inline-block;
     padding: 12px 18px;
@@ -248,13 +249,11 @@ img.btn_close {
     color: #333;
     overflow: hidden;
   }
-  
 .wrapper a span{
     position: relative;
     z-index: 2;
   }
-  
- .wrapper a:after{
+.wrapper a:after{
     position: absolute;
     content: "";
     top: 0;
@@ -264,32 +263,63 @@ img.btn_close {
     background-color: orange;
     transition: all .35s;
   }
-  
- .wrapper a:hover{
+
+.wrapper a:hover{
     color: #fff;
   }
-  
- .wrapper a:hover:after{
+
+.wrapper a:hover:after{
     width: 100%;
   }
-
 .down {
     margin-bottom: 40px;
 }
 
 
+
+/*MEDIA QUERIES*/
+
+
+
+@media screen and (max-width: 412px ){
+
+    .interet {
+        text-align: center;
+        font-size: medium;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .interet img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px #555;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width : 500px){
+    .exp_ecrit h3{
+        font-size: 14px;
+    }
+}
+
+
 @media screen and (max-width : 620px){
-    
-    .popup_block{       
+
+    .popup_block{
         /*taille pop*/
-        width: 95%; 
-        box-shadow: 0px 0px 20px #000;     
+        width: 95%;
+        box-shadow: 0px 0px 20px #000;
         padding: 10px;
         border: 10px solid #ddd;
         margin: 20% auto;
-
     }
-   
+
     img.btn_close {
         float: right;
         margin: -28px -30px 0 0;
@@ -298,16 +328,9 @@ img.btn_close {
 
 }
 
-@media screen and (max-width : 375px){
-    .popup_block h2 {
-        font-size: 20px;
-    }  
-
-}   
-
 
 @media screen and (max-width: 740px){
-   
+
     .exp img{
         width: 90%;
     }
@@ -329,14 +352,14 @@ img.btn_close {
 
 
 @media screen and (max-width: 1181px ){
-    
-    .interet{    
-     
-        text-align: center;       
+
+    .interet{
+
+        text-align: center;
         font-size: medium;
         display: block;
         margin-left: auto;
-        margin-right: auto;     
+        margin-right: auto;
        }
 
     .interet img{
@@ -346,32 +369,8 @@ img.btn_close {
         box-shadow: 0px 0px 15px #555;
         display: block;
         margin-left: auto;
-        margin-right: auto; 
-                
+        margin-right: auto;
+
     }
 
 }
-
-@media screen and (max-width: 412px ){
-    
-    .interet {         
-        text-align: center;       
-        font-size: medium;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;     
-    }
-
-    .interet img {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;        
-        box-shadow: 0px 0px 15px #555;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;   
-                
-    }
-
-}
-

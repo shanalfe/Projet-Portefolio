@@ -1,199 +1,160 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="fr" >
 <head>
-  <meta charset="UTF-8">
-  <title>Portefolio Shana LEFEVRE</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="icone/S.png">
+    <title>Portefolio Shana LEFEVRE</title>
+    <meta name="viewport" colcol="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-	<!--Liens style -->
-	<link rel="stylesheet" href="style/accanimation.css">
-	<link rel="stylesheet" href="style/style.css">
-	<link rel="stylesheet" href="style/real.css">
+    <!--Liens style -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/real.css">
+    <link rel="stylesheet" href="style/accanimation.css">
 
- 	<!--Lien pour la flèche-->
-  	<link type="text/css" rel="stylesheet" href="returnOnTop.css" media="all" />        
-  	<script type="text/javascript" src="js/jquery.js"></script>
-  	<script type="text/javascript" src="js/returnOnTop.js"></script>
-<head>
+    <script src="js/filter.js"></script>
+
+    <!--File ariane-->
+    <link rel="stylesheet" href="style/file_ariane.css">
+
+    <!--Barre progression-->
+    <link rel="stylesheet" href="barre_progress.css">
+    <script src="js/barre_progression.js"></script>
+
+    <!--Lien pour la flèche-->
+    <link type="text/css" rel="stylesheet" href="returnOnTop.css" media="all" />
+    <script src="js/jquery.js"></script>
+    <script src="js/returnOnTop.js"></script>
+</head>
 
 <body>
+    <div id= "progress">
+    </div>
+  
+        <div id="bloc_page">
+            <header>
+                <div id="titre_principal">
+                    <h2><a href="index.html">Shana Lefèvre</a></h2>
+                </div>
 
-	<div id="content">
-		<div id="bloc_page">
-        <header>
-            <div id="titre_principal">
-                <h2>Shana Lefèvre</h2>
+                <nav>
+                    <label for="mobile"><img src="icone/menu_fleche.png" style ="width:35px;" alt="fleche"></label>
+                    <input type="checkbox" id="mobile" role="button">
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="cv2.html">Curriculum </a></li>
+                        <li><a href="realisations.html" style="color :orange; text-decoration: underline; font-weight: bold;">Mes réalisations </a></li>
+                        <li><a href="contact2.html" >Contact </a>
+                    </ul>
+                </nav>
+            </header>
+    
+    </div>
+
+    <!--LES REALISATIONS-->
+    
+    <h1>Mes réalisations</h1>
+    <div class="espace_petit"></div>
+    <p>Vous trouverez tous mes programmes sur mon &nbsp; <a href="https://github.com/shanalfe" target="_blank"><img src="icone/github.png" style="width: 100px"></a>. </p>
+    <p> 🔍 Afin d'en savoir plus sur mes projets, cliquez sur l'image dès que cela est possible ! </p>
+    <div class="espace_mini"></div>
+    
+    <section>
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Tous mes projets</button>
+            <button class="btn" onclick="filterSelection('C')"> C</button>
+            <button class="btn" onclick="filterSelection('Java')"> Java</button>
+            <button class="btn" onclick="filterSelection('Web')"> WEB</button>
+            <button class="btn" onclick="filterSelection('video')"> Vidéos</button>
+        </div>
+
+        <div class="row" style="color: #000;">
+
+            <!--SameGame-->
+            <div class="column Java">
+                <div class="colcol">
+                    <h4>SameGame</h4>
+                   <a href="projet/samegame.html"><img src="picture/samegame/menu.png" alt="menu" style="width: 80%;"><a>
+                   
+                    <p>Le projet en java a été réalisé en binôme pour avril 2O21. Le but est de supprimer tous les blos en constituant des groupes de mêmes blocs. Dès l'instant qu'il n'y a plus la possibilité de faire des groupes, alors la partie est finie.</p>
+                    <p><i>🔍 Cliquez sur l'image pour en savoir plus !</i></p></a>
+                </div>
             </div>
-			<nav>				
-				<label for="mobile"><img src="icone/menu_fleche.png" width="35px"></label>
-				<input type="checkbox" id="mobile" role="button">
-				<ul>
-					<li><a href="index.html">Accueil</a></li>
-					<li><a href="cv2.html">Curriculum </a></li>
-					<li><a href="realisations.html" style="color :orange; text-decoration: underline; font-weight: bold;">Mes réalisations </a></li>
-					<li><a href="contact2.html" >Contact </a>
-				</ul>
-			</nav>
-		</header>
-		</div>
-	</div>
+
+            
+            <!--Blocus-->
+            <div class="column C">
+                <div class="colcol">
+                    <h4>Blocus</h4>
+                    <a href="projet/blocus.html"><img src="picture/blocus/accueil.png" alt="accueil" style="width: 100%;">
+                    <p>Le projet C a été réalisé en binôme pour décembre 2020. L'objectif est de bloquer l'adversaire sans se faire bloquer. Le premier joueur bloqué a perdu.</p>
+                    <p><i>🔍 Cliquez sur l'image pour en savoir plus !</i></p></a>
+                </div>
+            </div>
+
+            <!--Sudoku-->
+            <div class="column Java">
+                <div class="colcol">
+                    <h4>Sudoku</h4>
+                    <img src="picture/sudoku/menu.png" alt="menu" style="width: 80%;">
+                   
+                    <p>Le projet java a été réalisé en binôme pour avril 2020. L'objectif était de créer un sudoku avec une résolution automatique et manuelle.</p>
+                    <p><i>🔍 Description à venir</i></p></a>
+                </div>
+            </div>
+
+            <!--QuizZone-->
+            <div class="column Web">
+                <div class="colcol">
+                    <h4>QuizZone</h4>
+                    <img src="picture/accueilquizzone.png" alt="Quizz" style="width:100%">
+                    <p>Réalisation d'un site web en PHP, à l'aide du framework CodeIgniter, il permet de créer, partager des quiz et ainsi consulter les résultats.</p>
+                    <p><i>🔍 Description à venir</i></p></a>
+                </div>
+            </div>
+
+             <!--PortFolio-->
+             <div class="column Web">
+                <div class="colcol">
+                    <h4>PortFolio</h4>
+                    <img src="picture/portfolio/accueil.png" alt="photo" style="width: 100%;">
+                    <p>Réalisation d'un portfolio qui a pour objectif de me présenter. Découvrez-le dès maintenant !</p>
+                    <p><i>🔍 Description à venir</i></p></a>
+                </div>
+            </div>
+
+            <!-- Vidéo promotion-->
+            <div class="column video">
+                <div class="colcol">
+                    <h4>Vidéo promotion handball</h4>
+                    <iframe src="https://www.youtube.com/embed/WluFeQqg_8I" style="width: 90%; height: 80%;" ></iframe>
+                    <p>Vidéo réalisée bénévolement en accord avec la direction du club dans le but de promouvoir le <b>club de handball de Château-Thierry (02)</b> pour la <b>saison 2019-2020</b>.
+                        La réalisation du projet a durée environ 4 mois (tournage des différentes équipes et montage). <i>Sortie en avril 2019</i>.</p>
+                </div>
+            </div>
+
+           
+    </section>
 
 
-	<!--LES REALISATIONS-->
-	<!--PROGRAMMATION-->
-
-	<h1>Programmation</h1>
-	<p>Vous trouverez tous mes programmes sur mon <a href="https://github.com/shanalfe/Travaux-Pratiques" target="_blank">github</a>. </p>
-	<p>Voici mes principaux projets : </p>
-
-	<section>
-		
-		<br><h2>Sudoku</h2>
-
-		<p>Le but du projet est de créer un sudoku qui est capable de résoudre une grille ou bien de vérifier si la grille entrée par
-	l'utilisateur est correcte. Ce projet a été réalisé en binôme. <i>Réalisé en avril 2020.</i></p>
-
-		
-		<section class="carousel">
-			<ul class="carousel-items">			
-				<li class="carousel-item">
-					<div class="card">
-						<h2>Le menu</h2>
-						<img src="picture/sudoku/menu.png" >
-						<div class="card-content">
-							<p>Voici la première page du sudoku.</p>						
-						</div>
-					</div>
-				</li>
-
-				<li class="carousel-item">
-					<div class="card">
-						<h2 class="card-title">Le choix</h2>
-						<img src="picture/sudoku/choix.png">
-						<div class="card-content">
-							<p>Après d'avoir cliquer sur <i>Jouer</i>, l'utilisateur aura le choix entre : créer une grille, la résoudre et quitter le programme.</p>
-						
-						</div>
-					</div>
-				</li>
-
-				<li class="carousel-item">
-					<div class="card">
-						<h2 class="card-title">La création de la grille</h2>
-						<img src="picture/sudoku/creation.png">
-						<div class="card-content">
-							<p>Après d'avoir créer sa grille, on l'enregistre !</p>	
-						</div>
-					</div>
-				</li>
-
-
-				<li class="carousel-item">
-					<div class="card">
-						<h2 class="card-title">L'enregistrement / l'ouverture</h2>
-						<img src="picture/sudoku/valider.png">
-						<div class="card-content">
-							<p>Dans les <i>Résolution</i> et la <i>Création de la grille</i>, une petite fenêtre s'ouvre afin que l'on puisse accéder à nos grilles avec pour extension <i>.gri</i></p>		
-						</div>
-					</div>
-				</li>
-
-
-				<li class="carousel-item">
-					<div class="card">
-						<h2 class="card-title">La résolution automatique</h2>
-						<div class = "double_img_card">
-							<img src="picture/sudoku/resoluauto.png"/>
-							<img src="picture/sudoku/temps.png">
-						</div>
-						<div class="card-content">
-							<p>La résolution automatique résoud automatique la grille que l'on ouvert. Une autre fenêtre s'ouvre avec son temps d'exécution.</p>		
-						</div>
-					</div>
-				</li>
-
-				<li class="carousel-item">
-					<div class="card">
-						<h2 class="card-title">La résolution manuelle</h2>
-						<img src="picture/sudoku/resoluman.png" width="400" />
-						<div class="card-content">
-							<p>Après d'avoir ouvert la grille souhaitée, c'est à l'utilisateur de la remplir, il cliquera sur <i>valider</i> dès sa grille complétée. Si cette dernière est fausse, alors il ne se passera
-						rien, dans le cas contraire, une fenêtre <i>bravo</i> fera son apparition.</p>	
-						</div>
-					</div>
-				</li>		
-			
-		</section>
-
-		<p>La totalité du projet se trouve <a href="https://github.com/shanalfe/Sudoku" target="_bank">ici</a>.</p>
-
-	</section>
-
-	<div class="espace_petit">
-	</div>
-
-	<section>
-		<br>
-		<h2>Quiz pour les professeurs</h2>
-		<p>Ce projet a été aussi réalisé en binôme. Le but est de créer un site pouvant accueillir le professeur et ses élèves.
-		Le professeur peut créer des quizs et les faire faires à ses élèves. Des données de réussites et d'informations peuvent être stockées.
-	Pour cela, nous avons utilisé le PHP, le SQL, le HTML et le CSS pour réaliser ce projet. Nous avons utilisé CodeIgniter. Vous pouvez retrouver
-notre projet à l'url suivant : <a href="http://dwarves.iut-fbleau.fr/~lefevres/framework/" target="_blank">QuizZone</a>. <i>Projet réalisé en mai 2020.</i></p>
-	<br>
-	<div class ="quizZone">
-		<p>Voici sa page d'accueil :</p>
-		<img src="picture/accueilquizzone.png" width="900">
-	</div>
-
-	</section>
-
-	<section>
-		<br>
-		<h2>Portfolio</h2>
-		<p>Dans le cadre de ma formation en DUT informatique, j'ai réalisé ce portfolio. Il y a eu de nombreuses versions.</p>
-
-	</section>
-
-
-	<div class="espace_petit">
-	</div>
-
-	<!--VIDEOS-->
-	<h1>Vidéos</h1>
-	<p>Passionnée par la vidéo depuis mes 10 ans, j'ai pu découvrir et apprendre les différentes techniques du montage vidéo à travers des tutoriels et de la pratique. J'ai réalisé de nombreuses vidéos à titre "ammateur"
-		ayant pour but un titre "personnel" ou bien "professionnel" (pour des entreprises, des associations, des concours...).
-	</p>
-	<p>Voici quelques unes de mes réalisations.</p>
-	
-	<section>
-		<br>
-		<h2>Vidéo promotion pour le club de handball de Château-Thierry pour la saison 2019-2020</h2>
-		<div class="espace_mini">
-		</div>
-		<iframe src="https://www.youtube.com/embed/WluFeQqg_8I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		<p>Vidéo réalisée bénévolement en accord avec la direction du club dans le but de promouvoir le <b>club de handball de Château-Thierry (02)</b> pour la <b>saison 2019-2020</b>. Vidéo réalisée à l'aide d'un iphone et d'un stabilisateur puis montée avec le logiciel Hitfilm.
-	La réalisation du projet à durée environ 4 mois (tournage des différentes équipes et montage). <i>Réalisée en avril 2019</i>.</p>
-	</section>
-
-
-
-	<footer>
-		<!--Fin-->
+    <footer>
 		<aside class="info_footer">
-			<h4>Informations du site</h4>
+			<h4>INFORMATIONS DU SITE</h4>
 			<div class="espace_petit">
 			</div>
 			<p>Dernière mise à jour du site :
-			<b>Décembre 2020 - Version 4.1.1</b></p>
+			<b>Avril 2021 - Version 4.2.1</b></p>
 			<p>By @ShanaLefevre</p>
 			<p>Tous droits réservés.</p>
-			<a href="https://www.u-pec.fr/" target="_blank"><img src="icone/upec_blanc.png" width="200"  alt="Logo UPEC" ></a>
+			<a href="https://www.u-pec.fr/" target="_blank"><img class ="logo_upec" src="icone/upec_blanc.png" alt="Logo UPEC" ></a>
+      		<div class = "golo">
+        		<img src ="icone/S.png" alt="Logo shana">
+      		</div>
 			<p><i>Portefolio créé en novembre 2019</i></p>
 		</aside>
 
 		<aside class="menu_footer">
-			<h4>Navigation</h4>
-			<div class="espace_petit">			
+			<h4>NAVIGATION</h4>
+			<div class="espace_petit">
 			</div>
 			<p><a href="index.html">Accueil</a></p>
 			<p><a href="cv2.html">Curriculum</a></p>
@@ -202,15 +163,15 @@ notre projet à l'url suivant : <a href="http://dwarves.iut-fbleau.fr/~lefevres/
 		</aside>
 
 		<aside class="contact_footer">
-			<h4>Contactez-moi</h4>
-			<div class="espace_petit">			
+			<h4>CONTACTEZ-MOI</h4>
+			<div class="espace_petit">
 			</div>
-			<p><a target="_bank" href="https://www.linkedin.com/in/shana-lef%C3%A8vre-b1b19619b/"><img src="icone/ln_footer.png" alt="logo linkedin"></a></p>
-			<p><a target="_bank" href="https://www.youtube.com/channel/UCk2e47NhpKnLixJDr593qSw"><img src="icone/ytb_footer.png" alt="logo youtube"></a></p>
-			<p><a href="mailto:shana.lefevre@etu.u-pec.fr"> <img src="icone/mail_footer.png" alt="logo"></a></p>	
-		</aside>	  
-	
+			<p><a target="_blank" href="https://www.linkedin.com/in/shana-lef%C3%A8vre-b1b19619b/"><img src="icone/ln_footer.png" alt="logo linkedin"></a></p>
+			<p><a target="_blank" href="https://www.youtube.com/channel/UCk2e47NhpKnLixJDr593qSw"><img src="icone/ytb_footer.png" alt="logo youtube"></a></p>
+			<p><a href="mailto:shana.lefevre@etu.u-pec.fr"> <img src="icone/mail_footer.png" alt="logo"></a></p>
+		</aside>
 	</footer>
+
 
 </body>
 

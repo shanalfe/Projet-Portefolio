@@ -1,51 +1,71 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="fr" >
 
 <head>
-  <meta charset="UTF-8">
-  <title>PortFolio Shana LEFEVRE</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+ 	<meta charset="UTF-8">
+  	<link rel="icon" type="image/png" href="icone/S.png">
+  	<title>PortFolio Shana LEFEVRE</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
 	<!--Liens style -->
 	<link rel="stylesheet" href="style/accanimation.css">
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="style/cv.css">
 
+	<!--File ariane-->
+	<link rel="stylesheet" href="style/file_ariane.css">
+
+    <!--Barre progression-->
+    <link rel="stylesheet" href="barre_progress.css">
+	<script src="js/barre_progression.js"></script>
 
     <!--Lien pour la flèche-->
-    <link type="text/css" rel="stylesheet" href="returnOnTop.css" media="all" />        
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/returnOnTop.js"></script>
+    <link type="text/css" rel="stylesheet" href="returnOnTop.css" media="all" />
+    <script src="js/jquery.js"></script>
+    <script src="js/returnOnTop.js"></script>
 </head>
 
-<body>
 
-	<div id="content">
+<body>
+	<div id= "progress">
+	</div>
+
 		<div id="bloc_page">
         	<header>
             	<div id="titre_principal">
-                	<h2>Shana Lefèvre</h2>
+                	<h2><a href="index.html">Shana Lefèvre</a></h2>
             	</div>
-				<nav>				
-					<label for="mobile"><img src="icone/menu_fleche.png" width="35px"></label>
-					<input type="checkbox" id="mobile" role="button">
-				  	<ul>
-					  	<li><a href="index.html">Accueil</a></li>
-						<li><a href="cv2.html" style="color :orange; text-decoration: underline; font-weight: bold;">Curriculum </a></li>
-						<li><a href="realisations.html">Mes réalisations </a></li>
-					  	<li><a href="contact2.html" >Contact </a>
-				  	</ul>
-			  </nav>
-	  
+              	<nav>
+                  <label for="mobile"><img src="icone/menu_fleche.png" style ="width:35px;" alt="fleche"></label>
+                  <input type="checkbox" id="mobile" role="button">
+                  	<ul>
+                      	<li><a href="index.html">Accueil</a></li>
+                      	<li><a href="cv2.html" style="color :orange; text-decoration: underline; font-weight: bold;">Curriculum </a></li>
+                      	<li><a href="realisations.html">Mes réalisations </a></li>
+                      	<li><a href="contact2.html" >Contact </a>
+                  	</ul>
+              	</nav>
 			</header>
+		</div>
+	
+
+	<div class="espace_moyen">
+    </div>
+    <div class="breadcrumb">
+		<div class="flat">
+        <a href="#Formations" class="active">Mes formations</a>
+        <a href="#Comp">Mes compétences</a>
+        <a href="#Exp">Mes expériences</a>
+		<a href="#Ci">Mes centres d'interêt</a>
+		<a href="#Cv">Mon Curriculum papier</a>
 		</div>
 	</div>
 
-	
-	<h1>Mes formations</h1>
+	<!--MES FORMATIONS-->
+	<h1 id ="Formation">Mes formations</h1>
 	<div class="espace_petit">
 	</div>
-	
+
 	<section>
 		<div class="exp">
 			<div class="exp-logo">
@@ -54,18 +74,20 @@
 			<div class="exp-info">
 				<h3>DUT Informatique</h3>
 				<h4>à l'IUT de Fontainebleau (77). </h4>
-				<h5>2017 - 2019</h5>
+				<h5>2019 - 2021</h5>
 			</div>
 		</div>
 
 		<div class="exp">
-			<div class="exp-logo">
+			<div class="exp-logo_saintjo">
 				<a href="https://www.etablissementsaintjoseph.com/" target="_blank"><img src="picture/stjo.jpg" alt="Logo lycée"></a>
 			</div>
 			<div class="exp-info">
 				<h3>Baccalauréat scientifique, spécialité SVT</h3>
 				<h4>au Lycée Saint-Joseph de Château-Thierry (02).</h4>
 				<h5>2018 - 2019</h5>
+				<div class="espace_mini">
+				</div>
 			</div>
 		</div>
 	</section>
@@ -73,14 +95,16 @@
 	<p><i>Pour plus d'informations, cliquez sur les images ci-dessus.</i></p>
 
 
-	<h1>Mes compétences</h1>
+	<!--MES COMPETENCES-->
+	<h1 id="Comp">Mes compétences</h1>
 	<div class="espace_petit">
 	</div>
 
+	<!--Informatique-->
 	<section>
 		<div class="titre_comp">
 			<h2>Informatique</h2>
-		</div>	
+		</div>
 		<div class="comp2">
 			<p>C</p>
 			<p>75%</p>
@@ -124,14 +148,19 @@
 			<div class="conteneur-barre2">
 				<span class="barre c70"></span>
 			</div>
-  		</div>
+		</div>
+		<div class="espace_mini">
+		</div>
 	</section>
 
-	<p><i>Retrouvez la totalité de mes programmes ainsi que mes projets tutorés réalisés lors de ma formation sur mon <a href="https://github.com/shanalfe/Travaux-Pratiques" target="_bank">github</a>.</i></p>
-	
+	<p><i>Retrouvez la totalité de mes programmes ainsi que mes projets tutorés réalisés lors de ma formation sur mon <a href="https://github.com/shanalfe/Travaux-Pratiques" target="_blank">github</a>
+		et <a href="realisations.html">mes réalisations de mes différents projets</a></i>.
+	</p>
+	<div class="espace_mini">
+	</div>
+
+	<!--Linguisitque-->
 	<section>
-  		<div class="espace_petit">
-		</div>
   		<div class="titre_comp">
 			  <h2>Linguistique</h2>
 		</div>
@@ -160,58 +189,64 @@
   		</div>
 
   		<div class="comp2">
-			<p>Anglais informatique</p>
+			<p>Anglais technique</p>
 			<p>70%</p>
 			<div class="conteneur-barre2">
 				<span class="barre c70"></span>
 			</div>
-  		</div>
-
+		</div>
+		<div class="espace_mini">
+		</div>
 	</section>
 
 	<div class="espace_petit">
 	</div>
-	<h1>Mes expériences</h1>
+
+	<!--Mes expériences -->
+	<h1 id="Exp">Mes expériences</h1>
 	<div class="espace_petit">
 	</div>
-
 
 	<section>
 
 		<div class="exp_ecrit">
-			<h3>Expériences professionnelles :</h3>
-			<p><b>Aout 2020</b>: Vendanges à Bonneil (02).</p>
-			<p><b>Juillet - Aout 2020</b>: Equipière polyvalente au McDonald's à Château-Thierry (02).</p>
-			<p><b>Fin juin - début juillet 2019</b> : Palissage à Nesles la montagne (02)</p>
+			<br><h3>Expériences professionnelles :</h3><br>
+			<p><b>2021</b>: Formation de sapeur-pompier volontaire à la caserne de Château-Thierry (02).</p>
+			<p><b>Fin août 2020</b>: Vendanges à Bonneil (02).</p>
+			<p><b>Juillet - août 2020</b>: Equipière polyvalente au McDonald's à Château-Thierry (02).</p>
+			<p><b>Fin juin - début juillet 2019</b> : Palissage à Nesles la montagne (02).</p>
 		</div>
 
 		<div class="exp_ecrit">
-			<h3>Expériences personnelles :</h3>
+			<br><h3>Expériences personnelles :</h3><br>
 			<p><b>2020</b> : Membre du BDE à l'université de Fontainebleau (77) - Suppléante en trésorerie.</p>
 			<p><b>Du 12 au 15 Aout 2018</b>: Stage linguistique à San Francisco.</p>
-			<p><b>2018 - 2019</b>: Membre du CVL au lycée Jules Verne à Château-Thierry(02).</p>		
+			<p><b>2018 - 2019</b>: Membre du CVL (Conseil Vie Lycéen) au lycée Jules Verne à Château-Thierry(02).</p>
 		</div>
 
 		<div class="exp_ecrit">
-			<h3>Certificats :</h3>
+			<br><h3>Certificats :</h3><br>
 			<p><b>Avril 2019</b> : Obtention du permis B.</p>
-			<p><b>Septembre 2019</b>: Formation de jeune arbitre au niveau départemental à Amiens (80).</p>
+			<p><b>Septembre 2019</b>: Formation de jeune arbitre au handball au niveau départemental à Amiens (80).</p>
 			<p><b>2015</b>: Obtention du PSC1.</p>
 		</div>
 
 	</section>
 
 
+  	<div class="espace_petit">
+  	</div>
+	<h1 id="Ci">Mes centres d'intêret</h1>
+  	<div class="espace_petit">
+  	</div>
 
-	<h1>Mes centres d'intêret</h1>
-
+	<!--MES CENTES D'INTERETS-->
 	<section>
-	
 		<figure class="interet">
 			<a href="#overlay3"><img src="picture/hand.jpg" alt="Trail"></a>
 			<figcaption>Sport</figcaption>
 		</figure>
-		
+
 		<figure class="interet">
 			<a href="#overlay4"><img src="picture/musique.png"></a>
 			<figcaption>Musique</figcaption>
@@ -219,77 +254,82 @@
 
 		<figure class="interet">
 			<a href="#overlay5"><img src="picture/voyage.jpg" alt="Cuisine"></a>
-			<figcaption>Voyages</figcaption>
+			<figcaption>Voyage</figcaption>
 		</figure>
+		
+
 
 	</section>
 
 
 	<p><i>Pour plus d'informations, cliquez sur la petite ou les petites bulles !</i></p>
 
-	
+  	<div class="espace_petit">
+  	</div>
 	<!--centre d'interet sport-->
 	<div id="overlay3">
     	<div class="popup_block">
         	<a class="close" href="#noWhere"><img alt="Fermer" title="Fermer la fenêtre" class="btn_close" src="icone/fermer.png"></a>
 			<h2>Sport</h2>
-			<p>Je pratique le <b>handball</b> depuis plus de 8 ans maintenant. J'ai commencé les compétitions et les entrainements en club en <b>2015</b> au <a href="https://www.hbc-chateau-thierry.fr/" target="_blank">club de Château-Thierry</a> (02). 
+			<p>Je pratique le <b>handball</b> depuis plus de 8 ans maintenant. J'ai commencé les compétitions et les entrainements en club en <b>2015</b> au <a href="https://www.hbc-chateau-thierry.fr/" target="_blank">club de Château-Thierry</a> (02).
 			Puis en <b>2020</b>, j'ai
-		décidé d'intégrer le <a href="http://avonhandball.fr/" target="_bank">club d'Avon</a> (77).</p>
-			<p>Je pratique régulièrement la course à pied afin d'être au top physiquement. &#128516</p>
-			<p>Adepte du sport, j'ai eu l'occasion de pratiquer de nombreux sports comme la natation, la gymnastique, le ski (alpin et freestyle), le krav-maga, la danse, l'escalade.
-			J'ai fait également de l'équitation pendant 11 ans (niveau Galop 4).</p>    
+		décidé d'intégrer le <a href="http://avonhandball.fr/" target="_blank">club d'Avon</a> (77).</p>
+			<p>Je pratique régulièrement la course à pied afin d'être au top physiquement.</p>
+			<p>Adepte du sport, j'ai eu l'occasion de pratiquer de nombreux sports comme la natation, la gymnastique, le ski (alpin et freestyle), le krav-maga, la danse et l'escalade.
+			J'ai fait également de l'<b>équitation</b> pendant 11 ans (niveau Galop 4).</p>
     	</div>
 	</div>
 
 	<!--centre d'interet musique-->
 	<div id="overlay4">
     	<div class="popup_block">
-        	<a class="close" href="#noWhere"><img alt="Fermer" title="Fermer la fenêtre" class="btn_close" src="icone/fermer.png"></a>   
+        	<a class="close" href="#noWhere"><img alt="Fermer" title="Fermer la fenêtre" class="btn_close" src="icone/fermer.png"></a>
        		<h2>Musique</h2>
-			<p>J'ai fait <b>2 ans</b> de guitare et <b>4 ans</b> de piano. Aujourd'hui, je continue à pratiquer ces instruments
-		quand j'en ai le loisir. &#128522 </p>       
+			<p>J'ai fait <b>2 ans</b> de guitare dans un atelier guitare de mon école et <b>4 ans</b> de piano en école de musique. Aujourd'hui, je continue à pratiquer ces instruments
+		quand j'en ai le loisir.</p>
     	</div>
 	</div>
 
-	<!--centre d'interet votage-->
+	<!--centre d'interet voyage-->
 	<div id="overlay5">
     	<div class="popup_block">
         	<a class="close" href="#noWhere"><img alt="Fermer" title="Fermer la fenêtre" class="btn_close" src="icone/fermer.png"></a>
         	<h2>Voyage</h2>
         	<p>J'aime voyager, et découvrir le monde ! J'ai eu l'opportunité de réaliser de nombreux voyages dans le monde comme
-			les Etats-Unis (San Francisco), l'Espagne (Séville, Barcelone...), le Maroc, la Guadeloupe, le Royaume-Unis.. Et biensûr, les différentes villes de France !!! </p>
+			les Etats-Unis (San Francisco), l'Espagne (Séville, Barcelone...), le Maroc, la Guadeloupe, le Royaume-Unis.. Et biensûr, les différentes villes de France !!! Mes voyages ont différents objectifs : culturel, linguistique et touristique.</p>
     	</div>
 	</div>
+  	<div class="espace_petit">
+  	</div>
 
-
-	<h1>Mon CV papier</h1>
+	<!--CV PAPIER-->
+	<h1 id="Cv">Mon Curriculum en papier</h1>
 	<div class="espace_petit">
 	</div>
 	<img src="picture/pdf.svg" width="100" class="center_image down" alt="image logo pdf">
 	<div class="wrapper">
-		<a href="document/cvpap.pdf" target="_bank"><span>Télécharger le CV</span></a>
+		<a href="document/cvpap.pdf" target="_blank"><span>Télécharger le CV</span></a>
 	</div>
 
 
-
-
 	<footer>
-		<!--Fin-->
 		<aside class="info_footer">
-			<h4>Informations du site</h4>
+			<h4>INFORMATIONS DU SITE</h4>
 			<div class="espace_petit">
 			</div>
 			<p>Dernière mise à jour du site :
-			<b>Décembre 2020 - Version 4.1.1</b></p>
+			<b>Avril 2021 - Version 4.2.1</b></p>
 			<p>By @ShanaLefevre</p>
 			<p>Tous droits réservés.</p>
-			<a href="https://www.u-pec.fr/" target="_blank"><img src="icone/upec_blanc.png" alt="Logo UPEC" ></a>
+			<a href="https://www.u-pec.fr/" target="_blank"><img class ="logo_upec" src="icone/upec_blanc.png" alt="Logo UPEC" ></a>
+      		<div class = "golo">
+        		<img src ="icone/S.png" alt="Logo shana">
+      		</div>
 			<p><i>Portefolio créé en novembre 2019</i></p>
 		</aside>
 
 		<aside class="menu_footer">
-			<h4>Navigation</h4>
+			<h4>NAVIGATION</h4>
 			<div class="espace_petit">
 			</div>
 			<p><a href="index.html">Accueil</a></p>
@@ -299,16 +339,15 @@
 		</aside>
 
 		<aside class="contact_footer">
-			<h4>Contactez-moi</h4>
+			<h4>CONTACTEZ-MOI</h4>
 			<div class="espace_petit">
 			</div>
-			<p><a target="_bank" href="https://www.linkedin.com/in/shana-lef%C3%A8vre-b1b19619b/"><img src="icone/ln_footer.png" alt="logo linkedin"></a></p>
-			<p><a target="_bank" href="https://www.youtube.com/channel/UCk2e47NhpKnLixJDr593qSw"><img src="icone/ytb_footer.png" alt="logo youtube"></a></p>
+			<p><a target="_blank" href="https://www.linkedin.com/in/shana-lef%C3%A8vre-b1b19619b/"><img src="icone/ln_footer.png" alt="logo linkedin"></a></p>
+			<p><a target="_blank" href="https://www.youtube.com/channel/UCk2e47NhpKnLixJDr593qSw"><img src="icone/ytb_footer.png" alt="logo youtube"></a></p>
 			<p><a href="mailto:shana.lefevre@etu.u-pec.fr"> <img src="icone/mail_footer.png" alt="logo"></a></p>
-			
-		</aside>					  
-	
+		</aside>
 	</footer>
+
 
 </body>
 

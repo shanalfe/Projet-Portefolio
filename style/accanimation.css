@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700|Source+Sans+Pro");
+
 *,
 *::before,
 *::after {
@@ -21,9 +21,10 @@
           justify-content: center;
   padding: 12rem 2rem;
   color: white;
- /* background-image: url(cubenoir.jpg);*/
- background-image: -webkit-gradient(linear, left top, left bottom, from(#45484d), to(black)), url("https://source.unsplash.com/random/1920x1080/?sky");
- background-image: linear-gradient(to bottom, #45484d 0%, black 100%), url("https://source.unsplash.com/random/1920x1080/?sky");
+
+ background-image: -webkit-gradient(linear, left top, left bottom, from(#45484d), to(black)),
+  url("https://cdn.radiofrance.fr/s3/cruiser-production/2019/08/b5b50d60-4390-45d9-b7d0-d2f5c6588e50/1136_050_only_0389455.webp");
+
   background-blend-mode: multiply;
   background-size: cover;
 }

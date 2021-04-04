@@ -1,15 +1,16 @@
-section{  
-   
-    width: 100%;
+section{
+
+    width: 95%;
+    padding: 10px;
     padding-bottom: 20px;
     margin: 25px auto;
     box-shadow: 0px 0px 10px #bbb;
     background-color: #fff;
 }
 
-section h2 {  
+section h2 {
     text-align: center;
-    margin-bottom: 5px;    
+    margin-bottom: 5px;
 }
 
 
@@ -19,33 +20,101 @@ section iframe {
     margin-right: auto;
     width : 710px;
     height : 400px;
-   
+
 }
 
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
- 
-    
+/*LIEN*/
+/*Couleur lien*/
+a:link {
+    color: black;
+}
+a:visited{
+    color: black;
 }
 
 
+/*filter*/
+.row {
+	margin: 10px -10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.row h4 {
+    text-align: center;
+}
+.column {
+	float: left;
+	width: 33.33%;
+	display: none;
+}
+.row:after {
+	colcol: "";
+	display: table;
+	clear: both;
+}
+.colcol {
+	background-color: white;
+	padding: 10px;
+}
+.show {
+	display: block;
+}
+.btn {
+	border: none;
+	outline: none;
+	padding: 12px 16px;
+	background-color: white;
+	cursor: pointer;
+}
+.btn:hover {
+	background-color: #ddd;
+}
+.btn.active {
+	background-color: #666;
+	color: white;
+}
+
+
+
+
+
+
+
+
+/*video*/
+.logo_mv {
+  width: 140px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figcaption {
+  text-align: center;
+}
 
 /*site java*/
 
+.section_java {
+    width: 100%;
+}
 
-.carousel ul {
+.section_java ul {
     margin: 0 0 1.5rem;
     padding: 0;
 }
 
-.carousel li {
+.section_java li {
     display: inline-block;
 }
 
 .card h2 {
     text-align: center;
+    font-size: 18px;
+}
+.card p {
+    font-size: 15px;
 }
 .card {
     border: 1px solid #bac6d3;
@@ -55,15 +124,15 @@ img{
     /*couleur texte et fond*/
     background-color: black;
     color: white;
-    height: 620px; /*taille case noire*/
+    height: 610px; /*taille case noire*/
 }
 
 .card img {
-    width: 400px;
+    width: 300px;
 }
 
 .double_img_card img {
-    width: 320px;
+    width: 310px;
 }
 
 .carousel-items {
@@ -90,27 +159,84 @@ img{
 
 
 
+
+
+
+
+
+
+/*Réalisation portfolio*/
+.donnee_portfolio {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+
+}
+.donnee_portfolio img {
+    width: 73px;
+}
+.interet{
+    display : inline-block;
+    margin-left: 12%;/*décalate icone*/
+    text-align: center;
+}
+.logo_shanaa {
+  width: 90px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 412px ){
+
+    .interet {
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .interet img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px #555;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
 @media screen and (max-width: 646px){
     .card img {
         width: 300px;
     }
-    
+
     .double_img_card img {
         width: 220px;
     }
 
     .card {
-       height: 490px; /*taille case noire*/
+       height: 517px; /*taille case noire*/
     }
 
 }
 
-/*autre*/
+@media screen and (min-width : 735px ){
+    .photo_indication {
+        display: none;
+    }
+}
 
 
 
 @media screen and (max-width: 800px) {
-  
+
 section iframe {
     width: 300px;
     height: 150px;
@@ -119,11 +245,29 @@ section iframe {
 
 
 @media screen and (max-width: 991px) {
-.quizZone {
-    display: none;
+    .quizZone {
+        display: none;
+    }
 }
 
 
+@media screen and (max-width: 1181px ){
+
+    .interet{
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .interet img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px #555;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
-
-

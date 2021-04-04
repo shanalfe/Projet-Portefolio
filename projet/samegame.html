@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr" >
+
+<head>
+ 	<meta charset="UTF-8">
+  	<link rel="icon" type="image/png" href="icone/S.png">
+  	<title>PortFolio Shana LEFEVRE</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+	<!--Liens style -->
+	<link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="styleprojet/blocus.css">
+
+
+
+    <!--Lien pour la flèche-->
+    <link type="text/css" rel="stylesheet" href="../returnOnTop.css" media="all" />
+    <script src="../js/jquery.js"></script>
+    <script src="../js/returnOnTop.js"></script>
+</head>
+
+
+<body>
+	<div id= "progress">
+	</div>
+	<div id="content">
+		<div id="bloc_page">
+        	<header>
+            	<div id="titre_principal">
+                	<h2><a href="../index.html">Shana Lefèvre</a></h2>
+            	</div>
+              	<nav>
+                  <label for="mobile"><img src="icone/menu_fleche.png" style ="width:35px;" alt="fleche"></label>
+                  <input type="checkbox" id="mobile" role="button">
+                  	<ul>
+                      	<li><a href="../index.html">Accueil</a></li>
+                      	<li><a href="../cv2.html" style="color :orange; text-decoration: underline; font-weight: bold;">Curriculum </a></li>
+                      	<li><a href="../realisations.html">Mes réalisations </a></li>
+                      	<li><a href="../contact2.html" >Contact </a>
+                  	</ul>
+              	</nav>
+			</header>
+		</div>
+	</div>
+
+	<div class="espace_moyen">
+    </div>
+
+    <p><a href="../realisations.html">Retour</a></p>
+    <h1>Le SameGame</h1>
+
+    <section>
+
+        <p>Ce projet en java a été réalisé en binôme pour avril 2021. Le but est de supprimer tous les blocs en créant des groupes de même bloc. La partie se
+             finit quand il n'y a plus la possibilité de faire des groupes. L'objectif est de réaliser le plus grand score. Le score se calcule avec la formule
+              suivante : (n-2)² avec n qui représente la taille d'un groupe (nombre de bloc pour un groupe). La grille contient 15 colonnes et 10 lignes.
+        </p>
+        <p>Vous pourrez retrouver la totalité de notre projet <a href="https://github.com/shanalfe/SameGame" target="_blank">sur mon github</a>.</p>
+		<div class="espace_mini"></div>
+
+        <div class="container">
+			<p>
+				<img class="imgAccSameG" src ="../picture/samegame/menu.png">
+				<div class="espace_mini"></div>
+			Cette fenêtre propose à l'utilisateur de générer une grille aléatoire ou bien d'ouvrir un grille à partir d'un fichier ayant comme extension ".gri".
+            
+			</p>
+
+			<p>
+				<img class="imgAccSameG" src ="../picture/samegame/fichier.png">
+				<div class="espace_mini"></div>
+                Les fichiers ont une extansion ".gri". L'écriture du fichiers est composé de R, V et B. Chacune de ces lettres représentent respectivement le bloc
+                 rouge, vert et bleu.			
+			
+			</p>
+		</div>
+		
+		<div class="espace_mini"></div>
+
+        <div class="container">
+            <p>
+                <img class="imgAccSameG" src ="../picture/samegame/jeudepart.png">
+                <div class="espace_mini"></div>
+                Après d'avoir choisit la grille, notre fenêtre de jeu apparaît.
+            
+            </p>
+
+            <p>
+                <img class="imgAccSameG" src ="../picture/samegame/detection.png">
+                <div class="espace_mini"></div>
+                Puis avec notre souris, la détection d'un groupe se fait automatiquement grace à un algorithme. 
+            </p>
+        </div>
+
+        <div class="espace_mini"></div>
+
+
+        <div class="container">
+            <p>
+                <img class="imgAccSameG" src ="../picture/samegame/clique.png">
+                <div class="espace_mini"></div>
+                Après d'avoir choisit le groupe à éliminer, toujours à l'aide de la souris, on clique. Enfin, le score et la grille se remet à jour. 
+                La mise à jour de la grille se fait en deux temps : Si une colonne est vide, alors il y a un décalage vers la gauche qui se fait; 
+                Un bloc à toujours un bloc en dessous de lui, sinon ce dernier tombe.
+            
+            </p>
+
+            <p>
+                <img class="imgAccSameG" src ="../picture/samegame/detection.png">
+                <div class="espace_mini"></div>
+               Quand il n'y a plus la possibilité de faire un groupe, alors la partie est finie. Le jeu nous renvoie sur notre menu de fin avec le score 
+               total et il propose au joueur de rejouer ou bien de quitter le jeu.
+            </p>
+        </div>
+
+
+
+    </section>
+
+    
+    
+	
+
+
+
+
+
+	<footer>
+		<aside class="info_footer">
+			<h4>INFORMATIONS DU SITE</h4>
+			<div class="espace_petit">
+			</div>
+			<p>Dernière mise à jour du site :
+			<b>Avril 2021 - Version 4.2.1</b></p>
+			<p>By @ShanaLefevre</p>
+			<p>Tous droits réservés.</p>
+			<a href="https://www.u-pec.fr/" target="_blank"><img class ="logo_upec" src="../icone/upec_blanc.png" alt="Logo UPEC" ></a>
+      		<div class = "golo">
+        		<img src ="../icone/S.png" alt="Logo shana">
+      		</div>
+			<p><i>Portefolio créé en novembre 2019</i></p>
+		</aside>
+
+		<aside class="menu_footer">
+			<h4>NAVIGATION</h4>
+			<div class="espace_petit">
+			</div>
+			<p><a href="../index.html">Accueil</a></p>
+			<p><a href="../cv2.html">Curriculum</a></p>
+			<p><a href="../realisations.html">Mes réalisations</a></p>
+			<p><a href="../contact2.html">Me contacter</a></p>
+		</aside>
+
+		<aside class="contact_footer">
+			<h4>CONTACTEZ-MOI</h4>
+			<div class="espace_petit">
+			</div>
+			<p><a target="_blank" href="https://www.linkedin.com/in/shana-lef%C3%A8vre-b1b19619b/"><img src="../icone/ln_footer.png" alt="logo linkedin"></a></p>
+			<p><a target="_blank" href="https://www.youtube.com/channel/UCk2e47NhpKnLixJDr593qSw"><img src="../icone/ytb_footer.png" alt="logo youtube"></a></p>
+			<p><a href="mailto:shana.lefevre@etu.u-pec.fr"> <img src="../icone/mail_footer.png" alt="logo"></a></p>
+		</aside>
+	</footer>
+
+
+</body>
+
+</html>
