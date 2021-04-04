@@ -28,7 +28,20 @@ section{
     margin-right: auto;
 }
 
+.imgretour {
+    width: 40px;
+}
 
-@media screen and (max-width: 952px) {
-    
+.imgboutonretour {
+    width: 100px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media screen and (max-width: 596px) {
+    .container {
+        column-count: 1;
+    }
 }

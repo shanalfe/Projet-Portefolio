@@ -49,20 +49,15 @@ header h2{
 
 
 
-
+/*NAVIGATION*/
 nav{
     width: 60%;
     margin: 0 auto;
     background-color: white;
     position: sticky;
     top: 0px;
- 
-   
 }
-.conteneur-nav{
-    position: absolute;
-    width: 100%;
-}
+
 nav input[type=checkbox]{
     display: none;
 }
@@ -288,9 +283,7 @@ h2 a:visited{
 
 
 @media screen and (min-width: 980px){
-    .conteneur-nav{
-        position: static;
-    }
+   
     nav label, nav input{
         display: none;
 

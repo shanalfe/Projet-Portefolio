@@ -279,8 +279,6 @@ img.btn_close {
 
 /*MEDIA QUERIES*/
 
-
-
 @media screen and (max-width: 412px ){
 
     .interet {
@@ -313,10 +311,10 @@ img.btn_close {
 
     .popup_block{
         /*taille pop*/
-        width: 95%;
+        width: 75%;
         box-shadow: 0px 0px 20px #000;
         padding: 10px;
-        border: 10px solid #ddd;
+        border: 5px solid #ddd;
         margin: 20% auto;
     }
 
