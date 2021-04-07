@@ -2,7 +2,7 @@ section{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  width: 95%;
+  width: 85%;
   padding-bottom: 20px;
   margin: 20px auto;
   box-shadow: 0px 0px 10px #bbb;
@@ -11,115 +11,89 @@ section{
 
 /*Formulaire contact*/
 
-.form-style {
-    margin:10px auto;
-    width: 500px;
-    padding: 20px 12px 10px 20px;
-    color:rgb(209, 147, 14);
-}
-.form-style td {
-    padding: 0;
-    display: block;
-    list-style: none;
-    margin: 10px 0 0 0;
-
-  }
-
-.form-style td p {
-  text-align: center;
-}
-.form-style label{
-  margin:0 0 3px 0;
-  padding:0px;
-  display:block;
-  font-weight: bold;
-}
-.form-style .required{
-  color:red;
+form {
+  margin-top: 3%;
 }
 
-/*Bouton submit et reset*/
-.form-style td input [type=submit], .form-style td input [type = reset] {
-  text-align: center;
-}
-.form-style input[type=submit], .form-style input[type=reset]{
-  background: #eb8602;
-  color: #fff;
-  border:none;
-	padding:7px 3px 7px 3px;
-  border-radius:8px;
-  font-size: 15px;
-}
-.form-style input[type=submit]:hover, .form-style input[type=reset]:hover{
-  background: #ca8d1b;
-  box-shadow:none;
-  -moz-box-shadow:none;
-  -webkit-box-shadow:none;
+
+em {
+  color : red;
+   font-weight: bold;
 }
 
-.form-style .field-textarea{
-    height: 100px;
-  }
-.form-style input[type=text], .form-style input[type=email],textarea{
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  border:1px solid #BEBEBE;
-  padding: 7px;
-  margin:0px;
-  -webkit-transition: all 0.30s ease-in-out;
-  -moz-transition: all 0.30s ease-in-out;
-  -ms-transition: all 0.30s ease-in-out;
-  -o-transition: all 0.30s ease-in-out;
-  outline: none;
+
+label {
+  width: 100px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px;
 }
 
-.form-style .long{
+
+input[type=text] {
   width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-.form-style input[type=text]:focus, .form-style input[type=email]:focus, .form-style textarea:focus{
-  -moz-box-shadow: 0 0 8px #88D5E9;
-  -webkit-box-shadow: 0 0 8px #88D5E9;
-  box-shadow: 0 0 8px #88D5E9;
-  border: 1px solid #88D5E9;
-}
-.error{
-  color: #D8000C;
-  background-color: #FFBABA;
-}
-
-
-/*Etoile évalutation*/
-.rating {
-  width: 226px;
-  margin: 0 auto 1em;
-  font-size: 45px;
-  overflow:hidden;
-  text-align: center;
+input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-.rating a {
-  float:right;
-  color: #aaa;
-  text-decoration: none;
-  -webkit-transition: color .4s;
-  -moz-transition: color .4s;
-  -o-transition: color .4s;
-  transition: color .4s;
-
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-.rating a:hover, .rating a:hover ~ a, .rating a:focus, .rating a:focus ~ a	{
-  color: orange;
+
+input[type=submit] {
+  background-color: gray;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
-.rating2 {
-  direction: rtl;
+
+input[type=submit]:hover {
+  background-color: orange;
 }
-.rating2 a {
-  float:none
+
+
+input[type=reset] {
+  background-color: gray;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
+
+input[type=reset]:hover {
+  background-color: orange;
+}
+
+
+
 
 /*Zoom icone réseau social*/
 .zoom {
